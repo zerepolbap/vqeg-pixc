@@ -1,0 +1,65 @@
+/* Base styles */
+html {
+  font-size: clamp(16px, 4vw, 32px);;  /* 16vw -- calc(32px + 0.5vw)*/
+}
+
+body {
+  font-family: 'Helvetica Neue', Arial, sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 20px;
+  color: #333;
+  max-width: 600px;
+  margin: auto;
+}
+h1 {
+  color: #005a9c; /* Assuming VQEG uses a blue shade for headings */
+}
+
+/* Input, select, and button styles */
+input[type="text"], select, button {
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc; /* Lighter border color */
+  border-radius: 4px;
+  box-sizing: border-box;
+  font-size: 1rem; /* Responsive font size */
+}
+
+button {
+  background-color: #0064d2; /* VQEG button color */
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #0051b1; /* Darker shade on hover */
+}
+
+/* Card-like sections */
+#testStartScreen, #testSessionScreen, #testCompleteScreen {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Full-width inputs for smaller screens */
+#testIdInput, #codeInput, #specFileSelector {
+  width: calc(100% - 20px); /* Full width minus padding */
+}
+
+/* Descriptive text and completion message */
+#descriptionText, #completionMessage {
+  margin: 20px 0;
+  font-size: 1.2rem; /* Larger font for readability */
+}
+
+
+/* Utility class for hiding elements */
+.hidden {
+  display: none;
+}
+
+

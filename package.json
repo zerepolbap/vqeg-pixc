@@ -1,0 +1,14 @@
+{
+  "name": "pixc",
+  "version": "1.0.0",
+  "description": "P.IXC Treasure Hunt application",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js"
+  },
+  "author": "VQEG",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}

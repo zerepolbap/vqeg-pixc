@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>VQEG Test (ITU-T P.IXC)</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+  <div id="selectionScreen">
+    <h1>VQEG Test</h1>
+    <input type="text" id="testIdInput" placeholder="Enter Test ID">
+    <select id="specFileSelector"></select>
+    <button id="launchButton">Launch</button>
+  </div>
+
+  <div id="testStartScreen" style="display: none;">
+    <p>Press 'Start' to start the test</p>
+    <button id="startButton">Start</button>
+  </div>
+
+  <div id="testSessionScreen" style="display: none;">
+    <p id="descriptionText"></p>
+    <input type="text" id="codeInput">
+    <button id="enterButton">Enter</button>
+    <button id="cancelTestButton">Cancel Test</button>
+  </div>
+
+  <div id="testCompleteScreen" style="display: none;">
+    <p id="completionMessage"></p>
+    <button id="newTestButton">Launch New Test</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+
+
