@@ -104,7 +104,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   function validateCode() {
     const userCodeInput = document.getElementById('codeInput');
-    const userCode = userCodeInput.value;
+    const userCode = userCodeInput.value.toUpperCase();
     const [description, code] = specFileContent[currentLineNumber].split(',');
     if (userCode.trim() === code.trim()) {
       logEvent(internalId, testId, currentLineNumber, 'correct', userCode.trim());
